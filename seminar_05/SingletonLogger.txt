@@ -1,0 +1,6 @@
+DEBUG - Testing Singleton
+INFO - The End
+DEBUG - Different Log File
+INFO - The End
+INFO - Another One
+INFO - The End Again

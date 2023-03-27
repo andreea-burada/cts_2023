@@ -1,0 +1,2 @@
+DEBUG - Different Log File
+INFO - The End

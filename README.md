@@ -38,5 +38,9 @@
 	- `enum` (Java)
 
 #### Factory
-> Problem:
-- **keywords**:
+> Problem: Define an interface for creating an object, but let subclasses decide which class to instantiate. 
+> Lets a class defer instantiation to subclasses.
+- **keywords**: `many details`
+- `Simple Factory`: one single factory that handles all classes
+	- params: `ClassType type, common params`
+		- to pass the class type: `reflection` or `enum`
