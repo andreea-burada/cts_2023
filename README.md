@@ -44,3 +44,18 @@
 - `Simple Factory`: one single factory that handles all classes
 	- params: `ClassType type, common params`
 		- to pass the class type: `reflection` or `enum`
+
+#### Builder
+> Problem: Dealing with classes with a lot of attributes and details
+- **keywords**: `create objects fast with the needed attributes`, `atomic operation`
+- `atomic operation`: everything is set when the object is created
+- the constructor of the initial class becomes `private`
+- make all the `set` methods private
+- one way of defining the builder is to define it in the class for which we make the builder -> this way we have access to the private attributes of the original class
+	- `inner static public class`
+- another way is to define a private reference in the builder to the initial class and create the constructor so that it uses the minimum mandatory attributes
+- a builder can be of `eager` and `lazy` version
+	- `eager`: private field reference to initial class object
+	- `lazy`: same attributes as the initial class object (not preferred)
+
+- `director`: factory class which gives you a catalogue of predefined objects with predefined characteristics
